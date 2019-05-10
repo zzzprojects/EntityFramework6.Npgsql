@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b6d2b0a0-2506-4f12-8a67-e99188a0cac7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Z.EF.Classic.Npgsql.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlConnectionFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlMigrationSqlGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlProviderManifest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlRankingNormalization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlTextFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlTypeFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NpgsqlWeightLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Spatial\PostgisDataReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Spatial\PostgisServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\PendingProjectsNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\SqlBaseGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\SqlDeleteGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\SqlInsertGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\SqlSelectGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\SqlUpdateGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\StringPair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\VisitedExpression.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\CodeAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\CommandUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\ConnectionUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\NullabilityAnnotations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)install.ps1" />
+  </ItemGroup>
+</Project>

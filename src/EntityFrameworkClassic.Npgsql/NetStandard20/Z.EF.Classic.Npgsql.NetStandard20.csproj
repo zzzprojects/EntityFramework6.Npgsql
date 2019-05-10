@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Z.EntityFramework.Classic.Npgsql</AssemblyName>
+    <RootNamespace>Z.EntityFramework.Classic.Npgsql</RootNamespace>
+    <Version>7.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Z.EntityFramework.Classic.Npgsql.xml</DocumentationFile>
+    <OutputPath>bin\Release\netstandard2.0\</OutputPath>
+  </PropertyGroup>
+
+  <Import Project="..\Shared\Z.EF.Classic.Npgsql.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Remove="Resources\NpgsqlProviderManifest.Manifest.xml" />
+    <None Remove="Resources\NpgsqlSchema.msl" />
+    <None Remove="Resources\NpgsqlSchema.ssdl" />
+    <None Remove="Resources\NpgsqlSchemaV3.ssdl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\NpgsqlProviderManifest.Manifest.xml" />
+    <EmbeddedResource Include="Resources\NpgsqlSchema.msl" />
+    <EmbeddedResource Include="Resources\NpgsqlSchema.ssdl" />
+    <EmbeddedResource Include="Resources\NpgsqlSchemaV3.ssdl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LinqKit.Z.EntityFramework.Classic" Version="1.1.16" />
+    <PackageReference Include="Npgsql" Version="4.0.6" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Z.EF.Classic.Npgsql.Shared", "src\EntityFrameworkClassic.Npgsql\Shared\Z.EF.Classic.Npgsql.Shared.shproj", "{B6D2B0A0-2506-4F12-8A67-E99188A0CAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.EF.Classic.Npgsql.Net45", "src\EntityFrameworkClassic.Npgsql\Net45\Z.EF.Classic.Npgsql.Net45.csproj", "{8D0E0BCF-D332-4ACA-83E1-117B4E0471A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Z.EF.Classic.Npgsql.NetStandard20", "src\EntityFrameworkClassic.Npgsql\NetStandard20\Z.EF.Classic.Npgsql.NetStandard20.csproj", "{7894CEEE-48B8-4A54-AED6-A41D006254A4}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\EntityFrameworkClassic.Npgsql\Shared\Z.EF.Classic.Npgsql.Shared.projitems*{8d0e0bcf-d332-4aca-83e1-117b4e0471a8}*SharedItemsImports = 4
+		src\EntityFrameworkClassic.Npgsql\Shared\Z.EF.Classic.Npgsql.Shared.projitems*{b6d2b0a0-2506-4f12-8a67-e99188a0cac7}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D0E0BCF-D332-4ACA-83E1-117B4E0471A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0E0BCF-D332-4ACA-83E1-117B4E0471A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0E0BCF-D332-4ACA-83E1-117B4E0471A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0E0BCF-D332-4ACA-83E1-117B4E0471A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7894CEEE-48B8-4A54-AED6-A41D006254A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7894CEEE-48B8-4A54-AED6-A41D006254A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7894CEEE-48B8-4A54-AED6-A41D006254A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7894CEEE-48B8-4A54-AED6-A41D006254A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84B4C9EA-ED4F-4E87-8809-297958315622}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Npgsql.csproj
+	EndGlobalSection
+EndGlobal
