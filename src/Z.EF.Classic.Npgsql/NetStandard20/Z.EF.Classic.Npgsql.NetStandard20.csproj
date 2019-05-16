@@ -4,7 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Z.EntityFramework.Classic.Npgsql</AssemblyName>
     <RootNamespace>Z.EntityFramework.Classic.Npgsql</RootNamespace>
-    <Version>7.0.0</Version>
+    <Version>7.1.5</Version>
+    <Authors>ZZZ Projects</Authors>
+    <Description>PostgreSQL provider for Entity Framework Classic</Description>
+    <Copyright>Copyright ZZZ Projects</Copyright>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

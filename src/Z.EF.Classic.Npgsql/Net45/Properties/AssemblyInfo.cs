@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Z.EntityFramework.Classic.Npgsql")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("POstgreSQL provider for Entity Framework Classic")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ZZZ Projects")]
 [assembly: AssemblyProduct("Z.EntityFramework.Classic.Npgsql")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ZZZ Projects")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("7.0.0")]
-[assembly: AssemblyFileVersion("7.0.0")]
+[assembly: AssemblyFileVersion("7.1.5")]

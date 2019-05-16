@@ -28,8 +28,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\StringPair.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SqlGenerators\VisitedExpression.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\CodeAnnotations.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Z\CommandUtil.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Z\ConnectionUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\CommandExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Z\ConnectionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Z\NullabilityAnnotations.cs" />
   </ItemGroup>
   <ItemGroup>
