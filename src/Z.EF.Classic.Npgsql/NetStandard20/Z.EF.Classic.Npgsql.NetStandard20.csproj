@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Z.EntityFramework.Classic.Npgsql</AssemblyName>
-    <RootNamespace>Z.EntityFramework.Classic.Npgsql</RootNamespace>
+    <RootNamespace>Npgsql</RootNamespace>
     <Version>7.1.5</Version>
     <Authors>ZZZ Projects</Authors>
     <Description>PostgreSQL provider for Entity Framework Classic</Description>
