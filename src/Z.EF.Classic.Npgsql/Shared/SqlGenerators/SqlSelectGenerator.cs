@@ -125,7 +125,7 @@ namespace Npgsql.SqlGenerators
                 return kind == PrimitiveTypeKind.SByte || kind == PrimitiveTypeKind.DateTimeOffset;
             }))
             {
-                ((NpgsqlCommand)command).SetObjectResultTypes(pe.Projection.Arguments.Select(a =>
+                ((NpgsqlCommand)command).ObjectResultTypes = pe.Projection.Arguments.Select(a =>
                 {
                     var kind = ((PrimitiveType)((ColumnExpression)a).ColumnType.EdmType).PrimitiveTypeKind;
                     switch (kind)
@@ -137,7 +137,7 @@ namespace Npgsql.SqlGenerators
                     default:
                         return null;
                     }
-                }).ToArray());
+                }).ToArray();
             }
         }
     }
