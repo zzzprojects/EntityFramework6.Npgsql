@@ -15,7 +15,7 @@ namespace Npgsql
 
             // expression
             var settingsProperty = typeof(NpgsqlCommand).GetProperty("ObjectResultTypes", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            var expression = Expression.Property(parameter1, settingsProperty, parameter2);
+            var expression = Expression.Assign(Expression.Property(parameter1, settingsProperty), parameter2);
 
             // compile
             var compiled = Expression.Lambda<Action<NpgsqlCommand, Type[]>>(expression, parameter1, parameter2).Compile();
